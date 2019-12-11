@@ -206,8 +206,8 @@
 
     function buttonClickRef() {
       
-      //17AEDO is old one. Has money record inside. B5F0D1 is the new one = 0.
-      fetch("https://api.raisedforyou.com/api/v1/sessions/B5F0D1/donations", {
+      //B5F0D1 is old one. Has money record inside.  93D49A is the new one = 0.
+      fetch("https://api.raisedforyou.com/api/v1/sessions/93D49A/donations", {
           method: 'GET'
         })
 
@@ -242,13 +242,8 @@
       return perc;
     }
     //If it hits the aim, it will constantly make it work fireworks!
-      if (buttonClickRef() >= 1000){
-        console.log("its working");
-        makeFireworks();
-      }
-      else {
-        console.log("its not €1000 yet wait for fireworks!");
-      }
+      
+      
      // makeFireworks();
     function makeFireworks() {
             // when animating on canvas, it is best to use requestAnimationFrame instead of setTimeout or setInterval
