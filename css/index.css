@@ -4,7 +4,7 @@ body {
  position: absolute;
   width: 100%;
   height: 100%;
-  
+  background-color:#363636 ;
   overflow-x: hidden;
   font-family: arial;
   
@@ -25,12 +25,12 @@ canvas {
 
 .banner{
   width: 100%;
-  height: 150px;
-  top: 0;
-  background: url(../img/resized-150.png);
+  height: 300px;
+  top: -100px;
+  background: url(../img/banner.png);
   position: absolute;
-  
   background-repeat: repeat-x;
+  
 }
 
 .sparkle{
@@ -65,7 +65,7 @@ canvas {
   font-size: 500px;
   
   margin-top: -95px;
-  background:  url(../img/color4.jpeg);
+  background:  url(../img/bgMiddle.png);
   animation: animateMid 15s linear infinite;
   -webkit-background-clip: text;
   background-clip: text;
@@ -75,17 +75,18 @@ canvas {
 }
 @keyframes animateMid {
   0% {
-    background-position: left 800px top 0px;
+    background-position: left 300px top 0px;
   }
 }
 
 span{
+  width: 100%;
   font-size: 50px;
   margin-top: 7%;
-  margin-left: 30%;
+  text-align: center;
   position: absolute;
-  font-family: helvetica;
-  color: #d55b59
+  font-family: verdana;
+  color: goldenrod;
   
 }
 
@@ -117,7 +118,7 @@ font-family:arial;
   font-size: 110px;
   text-align: center;
   margin-left: -10%;
-  color: #282727;
+  color: white;
 
 }
 

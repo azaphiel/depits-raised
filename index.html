@@ -15,12 +15,12 @@
 </head>
 <body>
 
-    <!--  snowflake effect
-      <div id="snowflakes-container" style="width: 1000px; height: 500px; position: absolute;"></div>
+    
+      <div id="snowflakes-container" style="width: 100%; height: 95%; position: absolute;"></div>
     <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
     <script>
         var sf = new Snowflakes({
-            color: '#5ECDEF', // Default: "#5ECDEF"
+            color: 'white', // Default: "#5ECDEF"
             container: document.querySelector('#snowflakes-container'), // Default: document.body
             count: 100, // 100 snowflakes. Default: 50
             minOpacity: 0.1, // From 0 to 1. Default: 0.6
@@ -28,13 +28,13 @@
             minSize: 8, // Default: 8
             maxSize: 18, // Default: 18
             rotation: true, // Default: true
-            speed: 1, // The property affects the speed of falling. Default: 1
+            speed: 0.5, // The property affects the speed of falling. Default: 1
             wind: false, // Without wind. Default: true
-            width: 1600, // Default: width of container
-            height: 900, // Default: height of container
-            zIndex: 100 // Default: 9999
+            width: 2000, // Default: width of container
+            height: 1000, // Default: height of container
+            zIndex: 999 // Default: 9999
         });
-        </script> -->
+        </script> 
     
   <script>
     var Engine = Matter.Engine,
@@ -48,7 +48,7 @@
         options: {
           width: window.innerWidth,
           height: window.innerHeight,
-          background: '#fff',
+          background: '#363636',
           showAngleIndicator: false,
           wireframes: false}
   });
@@ -97,7 +97,7 @@
     restitution: 0.1,
     render: {
       sprite: {
-        texture: 'img/pink-box.png'
+        texture: 'img/gift1.png'
       }
     }
   })
@@ -106,7 +106,7 @@
     restitution: 0.1,
     render: {
       sprite: {
-        texture: 'img/orange-box.png'
+        texture: 'img/gift2.png'
       }
     }
   })
@@ -115,7 +115,7 @@
     restitution: 0.1,
     render: {
       sprite: {
-        texture: 'img/blue-box.png'
+        texture: 'img/gift3.png'
       }
     }
   })
@@ -124,7 +124,7 @@
     restitution: 0.1,
     render: {
       sprite: {
-        texture: 'img/lgreen-box.png'
+        texture: 'img/gift4.png'
       }
     }
   })
@@ -133,7 +133,7 @@
     restitution: 0.1,
     render: {
       sprite: {
-        texture: 'img/dorange-box.png'
+        texture: 'img/gift5.png'
       }
     }
   })
@@ -142,7 +142,7 @@
     restitution: 0.1,
     render: {
       sprite: {
-        texture: 'img/dgreen-box.png'
+        texture: 'img/gift6.png'
       }
     }
   })
@@ -151,13 +151,13 @@
     restitution: 0.1,
     render: {
       sprite: {
-        texture: 'img/dblue-box.png'
+        texture: 'img/gift7.png'
       }
     }
   })
   var groundColor = {
-    fillStyle: 'white',
-    strokeStyle: 'white',
+    fillStyle: 'black',
+    strokeStyle: 'black',
     lineWidth: 0
   }
 
@@ -182,7 +182,7 @@
   <div class="banner"></div>
   <div class="sparkle"></div>
   <canvas id="canvas">Canvas is not supported in your browser.</canvas>
-  <span><h2>Please Donate Us!</h2></span>
+  <span><h3>HELP US BUY NEW LOCKERS!</h3></span>
   <div class="skill">
     <div class="outer">
       <div class="inner" data-progress="100%" data-value="0">
@@ -194,10 +194,10 @@
   </div>
 
   <div class="perc">
-    <h5 id="here">€0</h5><img src="img/raised-c.png" 
+    <h5 id="here">€0</h5><img src="img/logo.png" 
     class="raised" width="300px" height="auto"alt="logo"></div>
   <img src="img/hat.png" class="hat" alt="hat">
-  <img src="img/depits-logo.jpg" class="logo" width="180px" height="180px"
+  <img src="img/depits-logo-white.png" class="logo" width="180px" height="180px"
   alt="logo">
   <img src="img/qr.png" class="qrCode" width="160px" height="160px" alt="qr">
   
