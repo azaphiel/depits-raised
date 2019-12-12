@@ -192,10 +192,13 @@
       </div>
     </div>
   </div>
+  
+  <div class="perc"><h5 id="here">€0</h5>
+    <img src="img/logo.png" class="raised" alt="logo">
 
-  <div class="perc">
-    <h5 id="here">€0</h5><img src="img/logo.png" 
-    class="raised" width="300px" height="auto"alt="logo"></div>
+  </div>
+
+  
   <img src="img/hat.png" class="hat" alt="hat">
   <img src="img/depits-logo-white.png" class="logo" width="180px" height="180px"
   alt="logo">
@@ -234,13 +237,13 @@
       var i = 0;
 
 
-      perc = Math.round((total / 100) + 450);
+      perc = Math.round((total / 100) + 1000);
       //with button one manual inc
       //perc += +document.getElementById("donation").value + (money/100);
 
       //removed percentage. activate if you want to use percentage down
       //document.getElementById('here').innerHTML = percentage(perc) + "%";
-      document.getElementById('here').innerHTML = "€" + perc ;
+      document.getElementById('here').innerHTML = "€" + perc;
       document.getElementById('demo2').style.height =(125 - percentage(perc)) + "%";
 
         //if its to make it raise by money up:
